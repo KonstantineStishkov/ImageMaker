@@ -1,0 +1,34 @@
+﻿<Window x:Class="BitmapProjectUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BitmapProjectUI"
+        Title="MainWindow" Height="800" Width="1800">
+    <Grid RenderTransformOrigin="0.494,0.107">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="369*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="ImageBox" HorizontalAlignment="Left" Height="739" Margin="10,10,0,0" VerticalAlignment="Top" Width="874" Grid.Column="1"/>
+        <TextBox x:Name="TB_ShapeCount" HorizontalAlignment="Center" Height="16" Margin="0,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Число вершин" HorizontalAlignment="Center" Margin="0,2,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TB_PointCount" HorizontalAlignment="Center" Height="16" Margin="0,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Количество точек" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Цвет" HorizontalAlignment="Center" Margin="0,271,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="CB_Color" HorizontalAlignment="Center" Margin="0,302,0,0" VerticalAlignment="Top" Width="120">
+            <ListBoxItem Background="Red" Content="" IsSelected="True"/>
+            <ListBoxItem Background="#FF14FF00"/>
+            <ListBoxItem Background="#FF0027FF"/>
+            <ListBoxItem Background="Black"/>
+        </ComboBox>
+        <Button x:Name="BTN_Draw" Content="Нарисовать" HorizontalAlignment="Center" Margin="0,329,0,0" VerticalAlignment="Top" Width="120" Click="BTN_Draw_Click"/>
+        <TextBox x:Name="TB_Offset" HorizontalAlignment="Center" Height="16" Margin="0,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Расстояние от края" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TB_PointThickness" HorizontalAlignment="Center" Height="16" Margin="0,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Толщина точек" HorizontalAlignment="Center" Margin="0,162,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TB_K" HorizontalAlignment="Center" Height="16" Margin="0,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Коэффициент (0 - 1)" HorizontalAlignment="Center" Margin="0,106,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
